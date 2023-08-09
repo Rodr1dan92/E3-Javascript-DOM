@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pizzeria Nucba</title>
+  </head>
+  <body class="bg-zinc-950">
+    <section
+      class="section mt-5 flex items-center justify-center flex-col text-white"
+    >
+      <h2 class="title font-black text-5xl m-4 text-red-600">Pizzería Nucba</h2>
+
+      <div class="encontrar-pizza p-8">
+        <form>
+          <input
+            class="input text-center text-zinc-800 p-2 px-8 font-bold text-base border-none rounded-2xl m-4"
+            type="number"
+            placeholder="ID Pizza"
+          />
+          <button
+            class="buscar text-amber-50 bg-green-600 rounded-2xl px-6 py-3 text-xs font-medium uppercase"
+            type="submit"
+          >
+            Buscar
+          </button>
+          <button
+            class="limpiar inline-block rounded bg-orange-800 px-4 py-3 text-xs font-medium uppercase"
+          >
+            Limpiar
+          </button>
+        </form>
+      </div>
+
+      <div
+        class="flex items-center justify-center flex-col p-3 m-1"
+        id="containerCard"
+      ></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
